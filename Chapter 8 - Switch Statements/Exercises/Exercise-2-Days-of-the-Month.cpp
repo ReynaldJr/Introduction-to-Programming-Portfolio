@@ -6,7 +6,7 @@ int main() {
 		cout << "This Program Will Check How Many Days Are There in a Month.\n"; //Outputs the title of the program.
 		cout << "Please enter the number that corresponds to the month you want to see the days of.\n"; // Asks the user for the input.
 
-		cout << " 1. January\n 2. February\n 3. March\n 4. April\n 5. May\n 6. June\n 7. July\n 8. August\n 9. September\n 10. October \n 11. November\n 12. December\n\n"; // Instructions for the user on what they should input.
+		cout << " 1. January\n 2. February\n 3. March\n 4. April\n 5. May\n 6. June\n 7. July\n 8. August\n 9. September\n 10. October \n 11. November\n 12. December\n\n"; // Instructions for the user on what they should input (Number Corresponds to the Month Number).
 		int input; // Declaring the variable for the user input.
 		cin >> input; // Gets the user input.
 
