@@ -6,10 +6,17 @@ int main() {
 	cout << "This Is a Program to Check the Grade Boundaries of a Test Paper\n\n"; // Outputs the title of the program.
 	cout << "Please enter the grade of the paper\n"; // Asks the user to input the grade of the paper
 	
-	int grade;
+	int grade; // Declaring variable for user input
 	cin >> grade; // User inputs grade of the paper
 
-	if (grade >= 70) { // Executed if user inputs a grade equal to or more than 70
+	if (std::cin.fail()) // A cin.fail function (This executes if user enters a value that is not a number)
+	{
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Please input numbers only\n";
+	}
+
+	else if (grade >= 70) { // Executed if user inputs a grade equal to or more than 70
 
 		cout << "\nThe Grade of the Paper is: A\n";
 		cout << "This student has done an excellent job in this subject!\n";
@@ -43,6 +50,6 @@ int main() {
 		cout << "The student has failed the subject.\n";
 
 	}
-	cin.get();
+	cin.get(); // Keeps the console window open
 	return 0;
 }
