@@ -8,7 +8,7 @@ int main()
 
     cout << "To get started, please input your full name\n"; // Outputs instructions for user to input their name.
     string name; // Declaring variable for user input
-    cin >> name; // User inputs their name.
+    getline(cin, name); // User inputs their name. Getline is used because cin itself cannot read spaces. Getline will read the input until the next line.
 
     cout << "Then, from 0-100, please input your grade\n"; // Outputs instructions for user to input their grade
     int grade; // Declaring variable for user input
@@ -26,23 +26,23 @@ int main()
         grade = grade / 10; // Since a switch statement can only read int values. This formula will be used. The comment below will tell the reason more about it in detail.
 
         /* Since int values only read the value before the decimal point, we can use this formula to our advantage.
-
+            
             For example, if a user inputs the grade to 85. The formula above will divide it to 10. Resulting our value to be turned to 8.5
 
             Once again, since int values only reads the value before the decimal point, the program will read the value to only 8.
 
-            As you can see in our switch statement, the value 8 fits into case 8 which is grade A.
-
-            The grade 85 still fits to the criteria to be graded A even if the value itself has turned to 8.
+            As you can see in our switch statement, the value 8 fits into case 8 which is grade A. 
+            
+            The grade 85 still fits to the criteria to be graded A even if the value itself has turned to 8. 
 
         */
 
         switch (grade) {
-
+            
         case 10: // Case for 10
         case 9: // Case for 9
         case 8: // Case for 8
-
+          
         {
             cout << "The grade of " << name << " is A\n"; // This message displays if the value is between 8-10 (80-100)
             cout << name << " has done an excellent job!\n"; // This message displays if the value is between 8-10 (80-100)
@@ -85,7 +85,7 @@ int main()
             cout << "The grade of " << name << " is F\n"; // This message displays if the value is less than 4 (0-39)
             cout << name << " has failed.\n"; // This message displays if the value is less than 4 (0-39)
         }
-
+        
 
         }
 
