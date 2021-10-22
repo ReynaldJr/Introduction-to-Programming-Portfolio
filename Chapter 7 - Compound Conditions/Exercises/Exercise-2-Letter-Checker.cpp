@@ -3,25 +3,28 @@ using namespace std;
 
 int main() {
 
-	cout << "Welcome to the Letter Checker!\n\n";
+	cout << "Letter Checker\n"; // Outputs the title of the program
 
-	char letter;
+	char letter; // Declaring variable for user input
 
-	cout << "Please input a character to get started. (SMALL LETTER ONLY)\n";
-	cin >> letter;
+	cout << "\nInput a letter\n"; // Instructions for user input
+	 
+	cin >> letter; // User inputs the letter
 
-	if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') { // Executed if user inputs a vowel
+	if (letter >= 'a' && letter <= 'z' || letter >= 'A' && letter <= 'Z') { // If user inputs a letter, lowercase or uppercase, this will be executed.
 
-		cout << "The letter is a vowel";
+		if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') { // If user inputs a vowel, this will be executed
 
+			cout << "The letter is a vowel\n"; // This message outputs if user inputs a vowel
+		}
+		else { // Executed if user inputs a consonant
 
+			cout << "The letter is a consonant\n"; // This message outputs if user inputs a consonant
+
+		}
 	}
-	else if (letter == 'b' || letter == 'c' || letter == 'd' || letter == 'f' || letter == 'g' || letter == 'h' || letter == 'j' || letter == 'k' || letter == 'l' || letter == 'm' || letter == 'n' || letter == 'p' || letter == 'q' || letter == 'r' || letter == 's' || letter == 't' || letter == 'v' || letter == 'w' || letter == 'x' || letter == 'y' || letter == 'z') { // Executed if user inputs a consonant
+	else { // Executes if user doesn't input an alphabet
 
-		cout << "The letter is a consonant.";
-	}
-
-	else { // Executed if user doesn't input a character
-		cout << "The letter you inputted is either a capital letter, a number, or a special character, please try again.";
+		cout << "Invalid\n"; // Outputs if user doesn't input an alphabet
 	}
 }
