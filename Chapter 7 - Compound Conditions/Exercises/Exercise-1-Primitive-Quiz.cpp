@@ -24,4 +24,6 @@ int main() {
 			cout << "\nThe correct answer is: Paris\n"; // If user doesn't input "Paris", "paris", or "PARIS," this message will be displayed.
 		} 
 
+	cin.get(); // Keeps the console window open
+	return 0;
 }	
