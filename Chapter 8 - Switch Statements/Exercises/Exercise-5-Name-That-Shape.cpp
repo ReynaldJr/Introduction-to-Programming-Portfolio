@@ -88,5 +88,7 @@ int main() {
 	}
 
 
+	cin.get(); // Keeps the console window open
+	return 0;
 
 }
