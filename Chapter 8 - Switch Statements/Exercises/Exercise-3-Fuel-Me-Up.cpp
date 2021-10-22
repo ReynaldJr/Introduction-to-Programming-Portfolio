@@ -7,6 +7,15 @@ int main() {
 	double liters; // Declaring variable for user input
 	cin >> liters; // User inputs liters
 
+	if (std::cin.fail()) // a cin.fail function (If user inputs a letter or a special character, an error will be displayed.
+	{
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Please input numbers only.\n";
+
+	} 
+
+	else { // If user inputs a number, the program will successfully continue
 
 		cout << "\nThe amount of liters you have inputted is " << liters << " liters\n"; // Outputs the liters the user inputted
 
@@ -88,7 +97,7 @@ int main() {
 			cout << "Invalid Input\n"; // Outputs this message if user doesn't enter letters: 'p', 'P', 'd', or 'D'.
 		}
 
-
+		
 	}
 
 	cin.get(); // Keeps the console window open.
