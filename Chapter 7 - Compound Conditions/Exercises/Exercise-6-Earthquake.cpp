@@ -12,8 +12,14 @@ int main() {
 
 	cin >> magnitude; // User inputs magnitude
 
+	if (std::cin.fail()) // A cin.fail function (This executes if user enters a value that is not a number)
+	{
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Please input numbers only\n";
+	}
 
-	if (magnitude <= 10.0) { // Executed if magnitude is less than 10.0
+	else if (magnitude <= 10.0) { // Executed if magnitude is less than 10.0
 
 		if (magnitude < 2.0) { // Executed if magnitude is less than 2.0
 			cout << "\nThe earthquake's magnitude is micro.\n";
@@ -48,14 +54,17 @@ int main() {
 			cout << "\nThe earthquake's magnitude is great.\n";
 			cout << "Buildings have suffered significant damage, and structures are likely to be demolished. Large-scale destruction. Extremely large areas are affected.\n";
 		}
+
+		cout << "\n\nSource: Wikipedia Contributors (2021) Richter Magnitude Scale. [online] En.wikipedia.org. Available at: <https://en.wikipedia.org/wiki/Richter_magnitude_scale> [Accessed 30 September 2021].\n"; // Outputs the source used in writing the magnitude.
 	}	
 	else { // Executed if magnitude is more than 10.0
 		cout << "\nThe earthquake's magnitude is meteoric.\n";
 		cout << "All buildings have been severely damaged or collapsed, resulting in entire or near-total destruction. Changes in the topography of the ground are permanent.\n";
+
+		cout << "\nSource: Wikipedia Contributors (2021) Richter Magnitude Scale. [online] En.wikipedia.org. Available at: <https://en.wikipedia.org/wiki/Richter_magnitude_scale> [Accessed 30 September 2021].\n"; // Outputs the source used in writing the magnitude.
 	}
 
-	cout << "\n\nSource: Wikipedia Contributors (2021) Richter Magnitude Scale. [online] En.wikipedia.org. Available at: <https://en.wikipedia.org/wiki/Richter_magnitude_scale> [Accessed 30 September 2021].\n"; // Outputs the source used in writing the magnitude.
 
-	cin.get();
+	cin.get(); // Keeps the console window open
 	return 0;
 } 
