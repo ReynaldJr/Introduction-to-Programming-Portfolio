@@ -1,2 +1,4 @@
-# Example 1 - Making Tea Algorithm
+# Table of Contents
+
+## Example 1 - Making Tea Algorithm
 Write algorithm to make tea.
