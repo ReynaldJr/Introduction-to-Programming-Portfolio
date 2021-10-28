@@ -22,7 +22,7 @@ complete the variables.
         
 ## Exercise 2 - Division Fix
 This program doesn’t quite work as expected, can you figure
-out a solution
+out a solution?
 
     #include <iostream>
     using namespace std;
