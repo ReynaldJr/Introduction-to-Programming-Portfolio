@@ -5,3 +5,6 @@ Write algorithm to add two numbers.
 
 ## Example 2 - Add Two Numbers Flowchart
 Draw a flowchart to add two numbers.
+
+## Example 3 - Tea Making Variation Algorithm
+Write algorithm to make a tea with variation.
