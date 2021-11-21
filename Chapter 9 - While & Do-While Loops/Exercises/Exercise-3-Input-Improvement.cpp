@@ -13,5 +13,6 @@ int main() {
 
 	} while ((input != 'Y') && (input != 'y')); // Improved the code here to allow the program to read lowercase y. 
 
+	cin.get(); //Keeps the console window open
 	return 0;
 }
