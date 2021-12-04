@@ -16,7 +16,7 @@ int main()
 
     for (int counter = 1; counter <= 10; counter++) { // A for loop for variable counter that counts from 1-10 in increments of 1
 
-        product = input * counter; // Formula for product in multiplication table
+        product = input * counter; // Formula for product in multiplication
         cout << input << "*" << counter << "=" << product << endl; // Outputs the table of the user input till 10
     }
 
