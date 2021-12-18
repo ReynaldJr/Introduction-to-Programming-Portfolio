@@ -10,10 +10,10 @@ void myCalculation(int num) {
 
 int main()
 {
-    int userNum;
-    cout << "Enter a number: ";
-    cin >> userNum;
-    myCalculation(userNum);
+    int userNum; // Create an int variable
+    cout << "Enter a number: "; // Asks user for input
+    cin >> userNum; // User inputs a number
+    myCalculation(userNum); // Calls the function and pass in num as parameter argument
 
     return 0;
 }
