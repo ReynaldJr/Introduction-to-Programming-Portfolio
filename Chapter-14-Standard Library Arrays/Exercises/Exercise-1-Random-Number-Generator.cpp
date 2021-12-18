@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
 	int six = 0; // Declaring the variable for counter for six
-
-	int randomArray[1000]; // Declaring an array with 1000 numbers
+	srand(7); // srand is used to generate random numbers
+	array<int, 1000> randomArray; // Declaring an array with 1000 numbers
 
 	for (int i = 0; i < 1000; i++) { // A for loop to iterate through the 1000 numbers
 
