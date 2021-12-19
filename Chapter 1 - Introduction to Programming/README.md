@@ -1,7 +1,6 @@
-# Table of Contents
+<p align="center"><img src="https://imgur.com/SSqlnTP.png"/></p>
+<p align="center">
+  <img src="https://imgur.com/MbCVlNW.png"/>
+</p>
 
-## Example 1 - Making Tea Algorithm
-Write algorithm to make tea.
-
-## Example 2 - Making Tea Flowchart
-Draw a flowchart to make tea.
+<p align="center"><img src="https://imgur.com/SSqlnTP.png"/></p>
