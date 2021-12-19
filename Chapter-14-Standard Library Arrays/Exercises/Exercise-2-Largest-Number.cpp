@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-	array<int, 10> randomArray; // Declaring an array with 10 elements
-	int large = 0; // Initializing the largest element with 0
+	int randomArray[10]; // Declaring an array with 10 elements
 
 	for (int i = 0; i < 10; i++) { // For loop that counts a variable from 0 to 9 in increments of 1 
 
@@ -20,6 +19,8 @@ int main()
 		}
 
 	}
+
+	int large = randomArray[0]; // Initializing the large variable with the beginning of the array
 
 	for (int j = 0; j < 10; j++) { // For loop that counts a variable from 0 to 9 in increments of 1 
 
