@@ -1,10 +1,6 @@
-# Table of Contents
+<p align="center"><img src="https://imgur.com/SSqlnTP.png"/></p>
+<p align="center">
+  <img src="https://imgur.com/FbLVVzZ.png"/>
+</p>
 
-## Example 1 - Add Two Numbers Algorithm
-Write algorithm to add two numbers.
-
-## Example 2 - Add Two Numbers Flowchart
-Draw a flowchart to add two numbers.
-
-## Example 3 - Tea Making Variation Algorithm
-Write algorithm to make a tea with variation.
+<p align="center"><img src="https://imgur.com/SSqlnTP.png"/></p>
